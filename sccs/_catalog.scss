@@ -241,6 +241,8 @@
             flex-direction: column;
             padding: 8px 0px;
             max-width: 200px;
+            min-width: 200px;
+            
             .btn-blue{
                //width: calc(100% + 16px);
                width: 100%;

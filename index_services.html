@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;0,900;1,800&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Nunito+Sans:ital,wght@0,400;0,700;0,900;1,800&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+   <link href="/css/bootstrap-grid.min.css" rel="stylesheet">
+   <link href="/css/nouislider.min.css" rel="stylesheet">
+   <link href="/css/main.css" rel="stylesheet">
+
+
+   <title>Document</title>
+</head>
+
+<body>
+   <div class="main-wrapper">
+      <header class="header row no-gutters align-items-center justify-content-between">
+         <div class="col">
+            <div class="logo"><a href="index.html"><img src="/ico/logo1.svg" alt=""></a></div>
+            <!-- /.logo -->
+         </div>
+         <!-- /.col -->
+         <div class="col">
+            <nav class="nav-menu">
+               <ul class="menu">
+                  <li class="menu-item"><a href="index_services.html">Послуги</a></li>
+                  <!-- /.menu-item -->
+                  <li class="menu-item"><a href="index_catalog.html">Каталог</a></li>
+                  <!-- /.menu-item -->
+               </ul>
+               <!-- /.menu -->
+            </nav>
+            <!-- /.nav-menu -->
+         </div>
+         <!-- /.col -->
+         <div class="col">
+            <div class="icons">
+               <div class="search">
+                  <!-- <form action="#">
+                           <img src="/ico/search_icon.svg" alt="search">
+                           <input type="text" name="search" >
+                           <button type="submit"><img src="/ico/search_icon.svg" alt="search"></button>
+                        </form> -->
+                  <img src="/ico/search_icon.svg" alt="search">
+               </div>
+
+               <div class="phone-link">
+                  <img src="/ico/phone_icon.svg" alt="phone" class="img-phone">
+                  <div class="phone-info">
+                     <a href="tel:+3800673700722">+380 (067) 370 07 22</a>
+                     <a href="mailto:sunfield@ukr.net">sunfield@ukr.net</a>
+                     <p>м. Львів, вул. Конюшинна 4</p>
+                  </div>
+               </div>
+               <a href="#"><img src="/ico/shopping_bag_2 (2).svg" alt="bag"></a>
+
+            </div>
+            <!-- /.icons -->
+         </div>
+         <!-- /.col -->
+
+      </header>
+      <!-- /.row align-items-center justify-content-between -->
+      <main class="main-block">
+         <!-- section slider-top -->
+         <section class="section-slider_top">
+            <div class="row no-gutters justify-content-center">
+               <div class="col-12">
+                  <div class="slider-top swiper">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                           <img src="/img/climacenter-banner-ru 1.svg" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="/img/climacenter-banner-ru 1.svg" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="/img/climacenter-banner-ru 1.svg" alt="img">
+                        </div>
+                     </div>
+                     <div class="swiper-pagination"></div>
+                  </div>
+
+               </div>
+            </div>
+         </section>
+         <!-- /section slider-top -->
+
+         <section class="section-breadcrumbs">
+            <div class="row no-gutters">
+               <div class="col-12">
+                  <div class="block">
+                     <ul class="breadcrumbs">
+                        <li><a href="#"><img src="/ico/392500_estate_home_house_real_icon 1.svg" alt=""></a></li>
+                        <li><a href="#">Послуги</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- /.section-breadcrumbs -->
+
+         <section class="section-catalog">
+
+            <div class="row no-gutters justify-content-between">
+               <div class="col-12 col-xl-3 block-saidbar" id="block-saidbar">
+                  <div class="title-xl">
+                     Послуги
+                  </div>
+                  <div class="row no-gutters">
+                     <div class="block-filters">
+
+                        <div class="filters-item" id="page">
+                           <div class="radio-item">
+                              <label class="label">
+                                 <input type="radio" class="radio" name="radio1">
+                                 <span class="fake"></span>
+                                 <span class="text">Каталог</span>
+                              </label>
+                              <label class="label">
+                                 <input type="radio" class="radio" name="radio1"  checked>
+                                 <span class="fake"></span>
+                                 <span class="text">Послуги</span>
+                              </label>
+                           </div>
+                        </div>
+                        <!-- <div class="filters-item">
+                           <div class="check-item">
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox" checked>
+                                 <span class="fake"></span>
+                                 <span class="text">Настінні кондеціонери</span>
+                              </label>
+                           </div>
+                           <div class="check-item">
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">Вентилятори</span>
+                              </label>
+                           </div>
+                           <div class="check-item">
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">Рекуператори</span>
+                              </label>
+                           </div>
+                           <div class="check-item">
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">Вентиляційні установки</span>
+                              </label>
+                           </div>
+                        </div> -->
+                        <!-- <div class="filters-item" id="brend">
+                           <div class="filter-title">
+                              Брэнд
+                           </div>
+                           <button class="btn-blue">
+                              Пошук
+                           </button>
+                           <form action="#" name="search">
+                              <label>
+
+                                 <input type="search" name="search" placeholder="Пошук">
+                                 <img src="/ico/search_icon2.svg" alt="">
+                              </label>
+
+                           </form>
+                           <div class="check-item" id="brend-check">
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">Bosch</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">Cooper&Hunter</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">Electrolux</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">Gree</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">Hyundai</span>
+                              </label>
+                           </div>
+                        </div> -->
+                        <!-- <div class="filters-item" id="cena">
+                           <div class="filter-title">
+                              Ціна
+                           </div>
+                           <div class="check-item">
+                              <div class="price">
+                                 <div class="price-block">
+                                    <span>от</span>
+                                    <input type="number" class="start" id="start" placeholder="0">
+                                 </div>
+                                 <div class="price-block">
+                                    <span>до</span>
+                                    <input type="number" class="end" id="end" placeholder="99 999">
+                                 </div>
+
+                              </div>
+                              <div class="slider-ui" id="slider-ui">
+                              </div>
+                           </div>
+
+                        </div> -->
+                        <!-- <div class="filters-item" id="tip-compres">
+                           <div class="filter-title">
+                              Тип компресора
+                           </div>
+                           <div class="check-item">
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">Non inverter</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">Inverter</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox" checked>
+                                 <span class="fake"></span>
+                                 <span class="text">Full inverter</span>
+                              </label>
+                           </div>
+                        </div> -->
+                        <!-- <div class="filters-item" id="plochad">
+                           <div class="filter-title">
+                              Площа приміщення, м²
+                           </div>
+                           <div class="check-item">
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">До 20 м²</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">До 27 м²</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">До 35 м²</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">До 50 м²</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">До 70 м²</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">До 100 м²</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">Понад 100 м²</span>
+                              </label>
+                           </div>
+                        </div> -->
+                        <!-- <div class="filters-item" id="functions">
+                           <div class="filter-title">
+                              Набір функцій
+                           </div>
+                           <div class="check-item">
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">Автоматичний</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">Вентилятор</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">Іонізація</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">Нічний</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">Обігрів</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">Осушення</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">Охолодження</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">Очищення повітря</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">Надтихий (до 20 Дб)</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">Турборежим</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">Зволоження</span>
+                              </label>
+                           </div>
+
+                        </div> -->
+                        <!-- <div class="filters-item" id="temp">
+                           <div class="filter-title">
+                              Робота при минусових температурах, °C
+                           </div>
+                           <div class="check-item">
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">до 0 °C</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">до -7 °C</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">до -15 °C</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">до -25 °C</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">до -32 °C</span>
+                              </label>
+                           </div>
+                        </div> -->
+                        <!-- <div class="filters-item" id="noise">
+                           <div class="filter-title">
+                              Кількість шуму, що видається, Дб
+                           </div>
+                           <div class="check-item">
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">Надтихий (до 24 Дб)</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">Звичайний (від 24 Дб)</span>
+                              </label>
+                           </div>
+                        </div> -->
+                        <!-- <div class="filters-item" id="cuntry">
+                           <div class="filter-title">
+                              Країна виробник
+                           </div>
+                           <div class="check-item">
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">Німеччина</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">Китай</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">Малайзія</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">Республіка Корея</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">США</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">Таїланд</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">Туреччина</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">Чехія</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">Швеція</span>
+                              </label>
+                              <label class="label">
+                                 <input type="checkbox" class="checkbox">
+                                 <span class="fake"></span>
+                                 <span class="text">Японія</span>
+                              </label>
+                           </div>
+
+                        </div> -->
+                     </div>
+                     <!-- /.block-filters -->
+                  </div>
+               </div>
+               <!-- /.col-12 col-md-3 block-saidbar -->
+               <div class="col-12 col-xl-9 block-catalog">
+                  <div class="row no-gutters align-items-center justify-content-between row-top">
+                     <button class="btn-filters" id="btn-filters">Фільтри</button>
+                     <!-- <div class="ul-filters">
+                        <ul class="">
+                           <li class="clear">Очистити</li>
+                           <li>Настінні кондеціонери<span>&times;</span></li>
+                        </ul>
+                     </div> -->
+                     <form action="#" style="visibility: hidden;">
+                        <div class="select">
+                           <div class="select-header">
+                              <span class="select-current" id="select-current">Популярні</span>
+                           </div>
+                           <div class="select-body">
+                              <div class="select-item" data-select="0">Популярні</div>
+                              <div class="select-item" data-select="1">Від дешевих до дорогих</div>
+                              <div class="select-item" data-select="2">Від дорогих до дешевих</div>
+                              <div class="select-item" data-select="3">VIP товари</div>
+                              <div class="select-item" data-select="4">Акційні</div>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+
+                  <div class="catalog-item">
+                     <div class="block-product">
+                        <div class="image">
+                           <img src="/img/Rectangle 66 (1).jpg" alt="product" class="product-image">
+                        </div>
+                        <!-- /.image -->
+                        <div class="category">
+                           <p>Послуги</p>
+                        </div>
+                        <!-- /.category -->
+                        <a href="#" class="name">
+                           <p>Проектування кліматичних систем</p>
+                        </a>
+                        <!-- /.name -->
+                     
+                        <div class="block-product_bottom">
+                           <button class="btn-clarify-price">Уточнити ціну</button>
+                           <!-- /.price -->
+                           <div class="cart"><img src="/ico/shopping_bag_2.svg" alt="cart">
+                           </div>
+                           <!-- /.cart -->
+                        </div>
+                        <!-- /.block-product_bottom -->
+                     </div>
+                     <!-- /.block-product -->
+                        <div class="block-product">
+                           <div class="image">
+                              <img src="/img/pool 1.jpg" alt="product" class="product-image">
+                           </div>
+                           <!-- /.image -->
+                           <div class="category">
+                              <p>Послуги</p>
+                           </div>
+                           <!-- /.category -->
+                           <a href="#" class="name">
+                              <p>Розробка індивідуальних систем керування</p>
+                           </a>
+                           <!-- /.name -->
+                        
+                           <div class="block-product_bottom">
+                              <button class="btn-clarify-price">Уточнити ціну</button>
+                              <!-- /.price -->
+                              <div class="cart"><img src="/ico/shopping_bag_2.svg" alt="cart">
+                              </div>
+                              <!-- /.cart -->
+                           </div>
+                           <!-- /.block-product_bottom -->
+                        </div>
+                        <!-- /.block-product -->
+                     <div class="block-product">
+                        <div class="image">
+                           <img src="/img/Rectangle 66.jpg" alt="product" class="product-image">
+                        </div>
+                        <!-- /.image -->
+                        <div class="category">
+                           <p>Послуги</p>
+                        </div>
+                        <!-- /.category -->
+                        <a href="#" class="name">
+                           <p>Сервісне обслуговування</p>
+                        </a>
+                        <!-- /.name -->
+                     
+                        <div class="block-product_bottom">
+                           <button class="btn-clarify-price">Уточнити ціну</button>
+                           <!-- /.price -->
+                           <div class="cart"><img src="/ico/shopping_bag_2.svg" alt="cart">
+                           </div>
+                           <!-- /.cart -->
+                        </div>
+                        <!-- /.block-product_bottom -->
+                     </div>
+                     <!-- /.block-product -->
+                     <div class="block-product">
+                        <div class="image">
+                           <img src="/img/Rectangle 66 (1).jpg" alt="product" class="product-image">
+                        </div>
+                        <!-- /.image -->
+                        <div class="category">
+                           <p>Послуги</p>
+                        </div>
+                        <!-- /.category -->
+                        <a href="#" class="name">
+                           <p>Проектування кліматичних систем</p>
+                        </a>
+                        <!-- /.name -->
+                     
+                        <div class="block-product_bottom">
+                           <button class="btn-clarify-price">Уточнити ціну</button>
+                           <!-- /.price -->
+                           <div class="cart"><img src="/ico/shopping_bag_2.svg" alt="cart">
+                           </div>
+                           <!-- /.cart -->
+                        </div>
+                        <!-- /.block-product_bottom -->
+                     </div>
+                     <!-- /.block-product -->
+                     <div class="block-product">
+                        <div class="image">
+                           <img src="/img/pool 1.jpg" alt="product" class="product-image">
+                        </div>
+                        <!-- /.image -->
+                        <div class="category">
+                           <p>Послуги</p>
+                        </div>
+                        <!-- /.category -->
+                        <a href="#" class="name">
+                           <p>Розробка індивідуальних систем керування</p>
+                        </a>
+                        <!-- /.name -->
+                     
+                        <div class="block-product_bottom">
+                           <button class="btn-clarify-price">Уточнити ціну</button>
+                           <!-- /.price -->
+                           <div class="cart"><img src="/ico/shopping_bag_2.svg" alt="cart">
+                           </div>
+                           <!-- /.cart -->
+                        </div>
+                        <!-- /.block-product_bottom -->
+                     </div>
+                     <!-- /.block-product -->
+                     <div class="block-product">
+                        <div class="image">
+                           <img src="/img/Rectangle 66.jpg" alt="product" class="product-image">
+                        </div>
+                        <!-- /.image -->
+                        <div class="category">
+                           <p>Послуги</p>
+                        </div>
+                        <!-- /.category -->
+                        <a href="#" class="name">
+                           <p>Сервісне обслуговування</p>
+                        </a>
+                        <!-- /.name -->
+                     
+                        <div class="block-product_bottom">
+                           <button class="btn-clarify-price">Уточнити ціну</button>
+                           <!-- /.price -->
+                           <div class="cart"><img src="/ico/shopping_bag_2.svg" alt="cart">
+                           </div>
+                           <!-- /.cart -->
+                        </div>
+                        <!-- /.block-product_bottom -->
+                     </div>
+                     <!-- /.block-product -->
+                     <div class="block-product">
+                        <div class="image">
+                           <img src="/img/Rectangle 66 (1).jpg" alt="product" class="product-image">
+                        </div>
+                        <!-- /.image -->
+                        <div class="category">
+                           <p>Послуги</p>
+                        </div>
+                        <!-- /.category -->
+                        <a href="#" class="name">
+                           <p>Проектування кліматичних систем</p>
+                        </a>
+                        <!-- /.name -->
+                     
+                        <div class="block-product_bottom">
+                           <button class="btn-clarify-price">Уточнити ціну</button>
+                           <!-- /.price -->
+                           <div class="cart"><img src="/ico/shopping_bag_2.svg" alt="cart">
+                           </div>
+                           <!-- /.cart -->
+                        </div>
+                        <!-- /.block-product_bottom -->
+                     </div>
+                     <!-- /.block-product -->
+                     <div class="block-product">
+                        <div class="image">
+                           <img src="/img/pool 1.jpg" alt="product" class="product-image">
+                        </div>
+                        <!-- /.image -->
+                        <div class="category">
+                           <p>Послуги</p>
+                        </div>
+                        <!-- /.category -->
+                        <a href="#" class="name">
+                           <p>Розробка індивідуальних систем керування</p>
+                        </a>
+                        <!-- /.name -->
+                     
+                        <div class="block-product_bottom">
+                           <button class="btn-clarify-price">Уточнити ціну</button>
+                           <!-- /.price -->
+                           <div class="cart"><img src="/ico/shopping_bag_2.svg" alt="cart">
+                           </div>
+                           <!-- /.cart -->
+                        </div>
+                        <!-- /.block-product_bottom -->
+                     </div>
+                     <!-- /.block-product -->
+                     <div class="block-product">
+                        <div class="image">
+                           <img src="/img/Rectangle 66.jpg" alt="product" class="product-image">
+                        </div>
+                        <!-- /.image -->
+                        <div class="category">
+                           <p>Послуги</p>
+                        </div>
+                        <!-- /.category -->
+                        <a href="#" class="name">
+                           <p>Сервісне обслуговування</p>
+                        </a>
+                        <!-- /.name -->
+                     
+                        <div class="block-product_bottom">
+                           <button class="btn-clarify-price">Уточнити ціну</button>
+                           <!-- /.price -->
+                           <div class="cart"><img src="/ico/shopping_bag_2.svg" alt="cart">
+                           </div>
+                           <!-- /.cart -->
+                        </div>
+                        <!-- /.block-product_bottom -->
+                     </div>
+                     <!-- /.block-product -->
+                     <div class="block-product">
+                        <div class="image">
+                           <img src="/img/Rectangle 66 (1).jpg" alt="product" class="product-image">
+                        </div>
+                        <!-- /.image -->
+                        <div class="category">
+                           <p>Послуги</p>
+                        </div>
+                        <!-- /.category -->
+                        <a href="#" class="name">
+                           <p>Проектування кліматичних систем</p>
+                        </a>
+                        <!-- /.name -->
+                     
+                        <div class="block-product_bottom">
+                           <button class="btn-clarify-price">Уточнити ціну</button>
+                           <!-- /.price -->
+                           <div class="cart"><img src="/ico/shopping_bag_2.svg" alt="cart">
+                           </div>
+                           <!-- /.cart -->
+                        </div>
+                        <!-- /.block-product_bottom -->
+                     </div>
+                     <!-- /.block-product -->
+                  </div>
+                  <!-- /.catalog-item -->
+                  <!-- <div class="catalog-pagination">
+                     <div class="pag-button-prev no-active">
+                        <div class="pag-arrow-prev"></div>
+                     </div>
+                     <ul>
+                        <li class="active"><a href="#"><span>1</span></a></li>
+                        <li><a href="#"><span>2</span></a></li>
+                        <li><a href="#"><span>3</span></a></li>
+                        <li><a href="#"><span>4</span></a></li>
+                        <li><a href="#"><span>5</span></a></li>
+                     </ul>
+                     <div class="pag-button-next">
+                        <div class="pag-arrow-next"></div>
+                     </div>
+                  </div> -->
+               </div>
+               <!-- /.col-12 col-md-9 block-catalog -->
+            </div>
+            <!-- /.row -->
+         </section>
+
+         <!-- /.section-catalog -->
+      </main>
+
+
+      <footer class="footer row no-gutters align-items-center justify-content-center">
+         <div class="col-7 col-md-3  block">
+
+            <h3>Контактна інформація</h3><br>
+            <div class="block-info">
+               <a href="tel:+380673700722">+38 (067) 370 07 22</a>
+               <a href="mailto:sunfield@ukr.net">sunfield@ukr.net</a>
+            </div>
+         </div>
+         <div class="col-7 col-md-3 block">
+            <h3>Юридична адреса та адреса для листування </h3><br>
+            <div class="block-info">
+               <p>м. Львів, вул. Курмановича,9</p>
+               <p>м. Львів, вул. Конюшинна,4</p>
+            </div>
+         </div>
+         <div class="col-7 col-md-3 block">
+            <h3>Графік роботи</h3><br>
+            <div class="block-info">
+               <p>Пн-Пт с 9:00 до 18 :00</p>
+               <p>Субота, неділя вихідні</p>
+            </div>
+         </div>
+      </footer>
+   </div>
+   <!-- <script src="/js/tabs.js"></script> -->
+   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+   <script src="/js/slider.js"></script>
+   <script src="/js/nouislider.min.js"></script>
+   <script src="/js/spoiler_filters.js"></script>
+   <script src="/js/price_slider.js"></script>
+   <script src="/js/catalog.js"></script>
+   <script>
+      let btnFilters = document.getElementById('btn-filters');
+      let blockSaidbar = document.getElementById('block-saidbar');
+      btnFilters.addEventListener('click', function () {
+         blockSaidbar.classList.add('active');
+      });
+   </script>
+</body>
+
+</html>

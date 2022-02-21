@@ -113,7 +113,10 @@
             margin-bottom: 8px;
          }
          .block-product_bottom {
-           
+           .btn-clarify-price{
+            width: 107px;
+            font-size: 14px;
+         }
             .price {
                span{       
                   font-size: 16px;                
@@ -158,6 +161,9 @@
                   font-size: 12px;                  
                }
             }
+         }
+         .image{
+            margin-bottom: 8px;
          }         
       } 
       /*--------------section-slider_image-----------------------*/
