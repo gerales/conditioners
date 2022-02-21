@@ -1,0 +1,148 @@
+@media(max-width:1024px){
+   h2{      
+         font-size: 24px;        
+      }
+   .header{
+     
+      .logo{
+         width: 100px;
+         height: 50px;
+      }
+   }
+   btn-blue{
+      font-size: 24px;
+   }
+   .footer {  
+      font-size: 14px;   
+      .block{ 
+         align-self: flex-start;     
+
+      }
+   }
+   /*-------------------------------------section1------------------------------*/
+   .section1{ 
+      min-height: 584px; 
+      .block {        
+         .btn-blue{
+            font-size: 24px;
+            width: 201px;
+            height: 59px;
+         }
+         .arrow{
+            display: none;
+         }
+      }
+      h1{
+         font-size: 36px;
+         margin-bottom: 48px;
+      }
+   }
+   /*-------------------------------------section2------------------------------*/
+   .section2 {  
+      min-height: 370px; 
+      padding-top: 10px;
+      .row:first-child{
+         margin-bottom: 50px;
+      }
+      .row:last-child{
+         margin-bottom: 100px;
+      }
+      
+      .block {
+         margin-left: 20px;
+         margin-bottom: 30px;
+         &::before{
+            content:'';
+            background: url('/ico/down_b_arrow_icon.svg')0 0 /34px 34px no-repeat;
+            position: absolute; 
+            top: 50%;
+            transform: translateY(-50%); 
+            width: 34px;
+            height: 34px;         
+         }
+         p{      
+            font-size: 18px;       
+         }
+      }
+   }
+   /*------------------------------section-algoritm----------------------------*/
+   .section-algoritm {
+   
+      .block {
+         p{         
+            font-size: 14px;           
+         }
+          img{            
+            width: 100px;
+            height: 100px;
+         }
+      }
+   }
+   /*---------------section-form_consult*/
+   .section-form_consult{
+      min-height: 410px;
+      padding-top: 35px;
+      padding-bottom: 35px;
+      font-size: 16px;
+      .consultation{
+         .row{         
+          &:last-child{
+             >div{
+                img{
+                   margin: 0 15px;
+                   width: 38px;
+                   height: 38px;
+                }
+             }
+          }
+      }
+         .input{
+            font-size: 16px;
+         }
+         .btn-blue{
+            font-size: 16px;
+            width: 200px;
+            height: 60px;
+         }
+      }
+   }
+   /*----------------------section-slider_product----------------------*/
+   .section-slider_product {
+      .block {
+         min-height: 50px;
+         font-size: 18px;  
+      }  
+   }
+
+      /*--------------section-slider_image-----------------------*/
+   .section-slider_images{
+      img{
+         display: block;
+         width: 423px;
+         height: 226px;
+         margin: 0 auto;
+      }
+      .swiper-pagination-bullet{
+         width: 16px;
+         height: 16px;
+         background: #C4C4C4;
+         margin: 0 16px;
+      }
+      .swiper-pagination-bullet-active{
+         background: #656565;
+         width: 16px;
+         height: 16px;
+      }
+      .swiper-wrapper{
+         margin-bottom: 40px;
+      }
+      .tabs{
+            margin-bottom: 25px;
+            .tabs-item{            
+            font-size: 14px;            
+         }
+      }
+   }
+
+   
+}

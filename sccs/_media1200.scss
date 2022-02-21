@@ -1,0 +1,25 @@
+@media(max-width:1200px){
+ 
+/*----------------section-catalog------------------- */
+   .section-catalog{
+      .block-saidbar {
+      //display: none;
+      }
+      .block-btn{
+         display: block;
+      }
+      .ul-filters{
+         display: none;
+      }
+         .block-catalog {
+  
+      .block-btn{
+        
+      }
+      .catalog-item{        
+         grid-template-columns: repeat(2,auto);         
+         }
+      }
+   }
+
+}
