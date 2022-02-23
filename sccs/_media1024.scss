@@ -144,5 +144,19 @@
       }
    }
 
-   
+   /*-------------------page-product-------------------*/
+   .page-product{
+      .section-breadcrumbs{
+         margin-top: 70px;
+      }
+   }
+}
+
+@media(min-width:1024px){
+    /*-------------------page-product-------------------*/
+    .page-product{
+      .section-breadcrumbs{
+         margin-top: 100px;
+      }
+   }
 }

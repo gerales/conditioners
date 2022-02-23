@@ -1,0 +1,49 @@
+@media(min-width:320px){
+   /*---------------------   page-product------------------------------*/
+      .col-12 {
+   }
+   .col-xl-5 {
+   }
+   .block-product-item {
+   }
+   .section-product{
+      .block-product-main{
+             margin-bottom: 25px;
+         .parameters {
+            order:1;
+             font-family: 'Roboto',sans-serif;
+            line-height: 2.5;
+            letter-spacing: 0em;
+            text-align: left;
+            color:#000000;
+              h2{
+               font-size: 24px;
+               font-style: normal;
+               font-weight: 700;
+               text-align: left;
+            }
+            .block-parameters {
+           
+            display: grid;
+            grid-template-columns: 50% 50%;
+           
+          
+            .parametr-item {
+              
+               font-size: 16px;
+               font-weight: 400;
+            }
+            .parametr-value {
+           
+               font-size: 16px;
+               font-weight: 700;
+               color:#222222;
+               }
+            }
+         }
+      }
+   }
+   
+   
+
+}

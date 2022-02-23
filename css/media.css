@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+  .header {
+    min-height: 48px;
+  }
+  .header .logo {
+    width: 100px;
+    height: 50px;
+  }
+}

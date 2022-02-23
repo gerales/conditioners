@@ -264,4 +264,99 @@
       }
       
    }
+   
+
+    /*-------------------modal--------------------------*/
+    .modal-form_consult{
+      .modal-container{
+         min-height: 250px;
+         min-width: 320px;
+      }
+   }
+   .modal-form_consult{
+      min-height: 365px;
+      padding-top: 10px;
+      .modal-container{
+         .consultation{
+            .row{         
+            &:last-child{
+               >div{
+                  position: relative;
+                  img{
+                     margin: 0 12px;
+                     width: 30px;
+                     height: 30px;
+                  }
+                  &::before,
+                  &::after{
+                   display: none;
+                  }
+               }
+            }
+        }
+           .input{
+              font-size: 16px;
+           }
+           .btn-blue{
+              font-size: 16px;
+              width: 126px;
+              height: 37px;
+           }
+        }
+      }
+   }
+
+   .modal-form_thanks{
+    .modal-container{
+       width: 320px;
+       height: 260px;
+       p{
+         font-size: 24px;
+       }
+    }
+   }
+
+   /*----------------------page-product-------------------------------*/
+   .section-product{
+      .title-product{
+         font-size: 14px;
+         margin: 16px 0px;
+      }
+      .order{
+         display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          border: 1px solid #E8E8E8;
+          
+          font-family: 'Montserrat',sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: 0em;
+           color:#000000;
+         &>*{
+            margin: 16px;
+           }     
+            .order-number{
+               font-size: 14px;
+            }
+            .price{
+               font-size: 24px;
+            }
+            .btn-on-cart{
+               width: 50%;
+            }
+            .btn-one-click{
+               width: 50%;
+            }
+            .order-soc-seti{
+              
+               .soc-icons{
+                  justify-content: space-around;
+               
+               }
+            }
+         } 
+   }
 }
