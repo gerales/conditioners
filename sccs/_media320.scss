@@ -1,49 +1,77 @@
 @media(min-width:320px){
    /*---------------------   page-product------------------------------*/
-      .col-12 {
-   }
-   .col-xl-5 {
-   }
-   .block-product-item {
-   }
-   .section-product{
-      .block-product-main{
-             margin-bottom: 25px;
-         .parameters {
-            order:1;
-             font-family: 'Roboto',sans-serif;
-            line-height: 2.5;
-            letter-spacing: 0em;
-            text-align: left;
-            color:#000000;
-              h2{
-               font-size: 24px;
-               font-style: normal;
-               font-weight: 700;
+  
+      .section-product{
+         padding: 0 16px;
+         .block-product-main{
+            margin-bottom: 25px;
+            .product-slider{
+               border: 2px solid #E8E8E8;
+               background:#FFFFFF;
+               display: flex;
+               flex-direction: column;
+               margin-bottom: 16px;
+               padding: 5px;
+               img{
+                  width: 100%;
+               }
+               .product-img-min{
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  >div{
+                     border: 1px solid #E8E8E8;
+                     border-radius: 4px;
+                     max-width: 70px;
+                     max-height: 70px;
+                     img{
+                        opacity: 0.7;
+                     }
+                  }
+                  .active{
+                        border: 1px solid #022ECC;
+                        img{
+                           opacity: 1;
+                        }
+                  }
+            }
+            .product-img-max{
+               img{
+                  max-height: 200px;
+               }
+            }
+         }
+            .block-product-item{
+            order:1;  
+            }
+            
+            .parameters {
+               order:1;
+               font-family: 'Roboto',sans-serif;
+               line-height: 2.5;
+               letter-spacing: 0em;
                text-align: left;
-            }
-            .block-parameters {
-           
-            display: grid;
-            grid-template-columns: 50% 50%;
-           
-          
-            .parametr-item {
-              
-               font-size: 16px;
-               font-weight: 400;
-            }
-            .parametr-value {
-           
-               font-size: 16px;
-               font-weight: 700;
-               color:#222222;
+               color:#000000;
+               h2{
+                  font-size: 24px;
+                  font-style: normal;
+                  font-weight: 700;
+                  text-align: left;
+               }
+               .block-parameters {
+               display: grid;
+               grid-template-columns: 50% 50%;
+               .parametr-item {
+                  font-size: 16px;
+                  font-weight: 400;
+               }
+               .parametr-value {
+                  font-size: 16px;
+                  font-weight: 700;
+                  color:#222222;
+                  }
                }
             }
          }
       }
    }
-   
-   
-
-}

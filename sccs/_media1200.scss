@@ -35,8 +35,14 @@
     /*----------------------page-product-------------------------------*/
    .section-product{
       .block-product-main{
-         .parameters{
+         .product-slider{
+            margin-right: 24px;
+         }
+         .block-product-item{
             order:0;
+         }
+         .parameters{
+            
              .block-parameters {
                grid-template-columns: 70% 30%;
                .parametr-item {

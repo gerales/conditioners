@@ -1,0 +1,21 @@
+@media(min-width:768px){
+   /*---------------------   page-product------------------------------*/
+  
+      .section-product{
+      
+         .block-product-main{
+           
+            .product-slider{
+               margin-right: 12px;
+               .product-img-max{
+                  img{
+                     max-height: 320px;
+                  }
+               }
+            }
+            .order{
+               margin-left: 12px;
+            }
+         }
+      }
+}
