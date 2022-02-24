@@ -55,6 +55,9 @@
 @media(min-width:1366px){
   /*----------------------page-product-------------------------------*/
    .section-product{
+      .block-product-main{
+         
+      }
       .order{
       
          .price{
@@ -63,4 +66,18 @@
          }
       }     
    }
+    /*--------------------------section-simsilar-product------------------*/
+      .section-similar-product{
+         .block-similar{
+            h2{
+               font-size: 36px;
+            }
+            .block-arrow{
+               display:flex;
+            }
+         }
+         .swiper-pagination{
+            display: none;
+         }
+      }
 }

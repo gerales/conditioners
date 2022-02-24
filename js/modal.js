@@ -1,4 +1,4 @@
-window.onload = function () {
+function modalWindows() {
     const modal = document.getElementById('modal-consult');
     const body = document.body;
     const formCons = document.querySelector('.consultation');
@@ -40,3 +40,4 @@ window.onload = function () {
        modalThanks.classList.add('modal-active');
     });
  }
+ modalWindows();

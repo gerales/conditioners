@@ -1,10 +1,16 @@
 @media(min-width:320px){
    /*---------------------   page-product------------------------------*/
-  
+  /*---------------section-product----------------------------------*/
       .section-product{
          padding: 0 16px;
          .block-product-main{
             margin-bottom: 25px;
+            #service{
+               background: #FFFFFF;
+               border: 2px solid #E8E8E8;
+               padding: 16px;
+               margin: 16px 0;
+            }
             .product-slider{
                border: 2px solid #E8E8E8;
                background:#FFFFFF;
@@ -73,5 +79,17 @@
                }
             }
          }
+      }
+      /*--------------------------section-simsilar-product------------------*/
+      .section-similar-product{
+         .block-similar{
+            h2{
+               font-size: 24px;
+            }
+            .block-arrow{
+            display: none;
+         }
+         }
+         
       }
    }

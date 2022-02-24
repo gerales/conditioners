@@ -37,6 +37,7 @@
          </div>
          <!-- /.col -->
          <div class="col">
+            <div class="hamburger-menu"><button class="btn-hamburger btn-hamburger-line"><span class="span-hamburger"></span></button></div>
             <div class="icons">
                <div class="search">
                   <!-- <form action="#">
@@ -59,6 +60,7 @@
                
             </div>
             <!-- /.icons -->
+            
          </div>
          <!-- /.col -->
         
@@ -967,10 +969,16 @@
          </div>
       </div>
   </div>
-   <script src="/js/tabs.js"></script>   
+     
    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
    <script src="/js/slider.js"></script>
    <script src="js/modal.js"></script>
-
+   <script src="/js/tabs.js"></script>
+   <script>
+      document.querySelector('.btn-hamburger').addEventListener('click', function(e){
+         e.preventDefault();
+         this.classList.toggle('active');
+      });
+   </script>
 </body>
 </html>

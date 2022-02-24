@@ -109,6 +109,7 @@ html,body{
    }
    .icons{
       display: flex;
+      visibility: hidden;
      // margin-right: 26px;
       justify-content: flex-end;
       img{
@@ -164,7 +165,105 @@ html,body{
          }        
       }
    }
-}
+   .hamburger-menu{
+      position: relative;
+      .btn-hamburger{
+         position: absolute;
+         top:0;
+         right: 0;
+         cursor: pointer;
+         margin: 0;
+         padding: 0;
+         font-size: 0;
+         width: 26px;
+         height: 20px;
+         display: block;
+         background-color:transparent;
+         &:focus{
+            outline: none;
+         }
+         .span-hamburger{
+            display: block;
+            position: absolute;
+            background: #BEBCBD;
+            width: 100%;
+            height: 4px;
+            top:15px;
+            right: 0;
+            border-radius: 2px;
+            &::before,
+            &::after{
+               position: absolute;
+               display: block;
+               width: 80%;
+               height: 4px;
+               background: #BEBCBD;
+               border-radius: 2px;
+               right: 0;
+               content:'';
+            }
+            &::before{
+               top: -10px;
+            }
+            &::after{
+               bottom:-10px;
+            }
+           
+         }
+          &:hover .span-hamburger::before ,&:hover  .span-hamburger::after
+          {
+               width: 100%;
+               transition-duration: .3s, .3s;
+               transition-delay: .3s, 0s;
+            }
+            &:not(:hover) .span-hamburger::before ,&:not(:hover)  .span-hamburger::after
+          {
+               width: 80%;
+              transition-duration: .3s, .3s;
+               transition-delay: .3s, .3s;
+            }
+            
+         
+           
+            
+         
+        
+         }
+         .btn-hamburger-line{
+            & .span-hamburger{
+               transition: background 0s .3s;
+            }
+             & .span-hamburger::before, & .span-hamburger::after{
+               transition-duration: .3s, .3s;
+               transition-delay: .3s, .3s;
+            }
+            & .span-hamburger::before{
+                transition-property: transform, top;
+                transition-duration: .5s;
+             }
+            & .span-hamburger::after{
+                transition-property: bottom, transform;
+             }
+            &.active .span-hamburger{
+               background:none;
+            }
+            &.active .span-hamburger::before{
+               width: 100%;
+               top:0;
+               transform: rotate(-45deg);
+            }
+            &.active .span-hamburger::after{
+               width: 100%;
+               bottom:0;
+               transform: rotate(45deg);
+            }
+            &.active .span-hamburger::before, &.active .span-hamburger::after{
+               transition-delay: .3s, .3s;
+            }
+         }
+      }
+   }
+
 
 /*------------------------------------footer---------------------------------*/
 .footer {
@@ -939,128 +1038,14 @@ html,body{
    margin: 0 0 40px;
 }
 
-/*----------------------page-product-------------------------------*/
-.section-product{
-   padding: 0 24px;
-   .title-product{
-      font-family: 'Montserrat',sans-serif;
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 1.2;
-      letter-spacing: 0em;
-      text-align: left;
-      margin: 24px 0px;
-   }
-   .block-product-main{
-      .block-product-item{
-         //border:2px solid black;
-      }
-   }
-   .order{
-   display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid #E8E8E8;
-    
-    font-family: 'Montserrat',sans-serif;
-      //font-size: 16px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 1.2;
-      letter-spacing: 0em;
-     //text-align: left;
-     color:#000000;
-   //   &:nth-child(odd),
-   //   &:nth-child(even)
-   &>*{
-      margin: 16px;
-     }
-   //   &:last-child{
-   //      margin-bottom: 0;
-   //   }
-      .order-number{
-         font-size: 16px;
-      }
-      .price{
-         font-size: 36px;
-         color: #222222
-      }
-      .btn-on-cart{
-         background: linear-gradient(85.74deg, #03C147 1.18%, #057A2F 99.58%);
-         box-shadow: 0px 0px 13px rgba(0, 167, 60, 0.5);
-         border-radius: 10px;
-         padding: 8px;
-         color:#FFFFFF;
-         width: calc(100% - 32px);
-         min-height: 45px;
-         cursor: pointer;
-      }
-      .btn-one-click{
-         padding: 8px;
-         border: 2px solid #001F8D;
-         border-radius: 10px;
-         color: #1C3998;
-         width: calc(100% - 32px);
-         min-height: 45px;
-         cursor: pointer;
-      }
-      .order-soc-seti{
-         display: flex;
-         flex-direction: column;
-         background: #E9E9E9;
-         width: 100%;
-         padding: 16px;
-         margin-bottom: 0;
-         h3{
-            text-align: center;
-            margin-bottom: 20px;
-         }
-         .soc-icons{
-            display: flex;
-            justify-content: space-between;
-         
-         }
-      }
-   }
-   .block-product-info{
-      background: #FFFFFF;
-      border: 2px solid #E8E8E8;
-      font-family: 'Roboto',sans-serif;
-      letter-spacing: 0em;
-      text-align: left;
-      color:#000000;
-      padding: 10px;
-      h2{
-         font-size: 24px;
-         font-style: normal;
-         font-weight: 700;
-         line-height: 1.2;
-         letter-spacing: 0em;
-         text-align: left;
-      }
-      p,
-      h3{
-         font-size: 16px;
-         font-style: normal;
-         font-weight: 400;
-         line-height: 2;
-         letter-spacing: 0em;
-         text-align: left;
-      }
-      p{
-         margin-bottom: 30px;
-      }
-   }
-}
+
 
 
 
 
 
 @import '_catalog';
-
+@import '_page-product';
 @import '_media1024';
 @import '_media768';
 @import '_media320';

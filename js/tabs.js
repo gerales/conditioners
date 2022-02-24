@@ -2,7 +2,7 @@ window.onload = function () {
    document.querySelector('.section-slider_product').addEventListener('click', fTabsProduct);
 
    function fTabsProduct(event) {
-      //console.log(event);
+      console.log(event);
       if (event.target.classList.contains('tabs-slider')) {
          let dataTab = event.target.getAttribute('data-tab');
          //отключаем класс _active
@@ -55,8 +55,7 @@ window.onload = function () {
    //функция обработки клика по стрелкам
    function fArrow(event){
       //console.log(event);
-      if((event.target.classList.contains('tabs-button-prev') && !event.target.firstElementChild.classList.contains('no_active')) || 
-      (event.target.classList.contains('arrow-prev') && !event.target.classList.contains('no_active'))){
+      if((event.target.classList.contains('tabs-button-prev') && !event.target.firstElementChild.classList.contains('no_active')) || (event.target.classList.contains('arrow-prev') && !event.target.classList.contains('no_active'))){
          for(let i = tabsItem.length-1; i>0; i-- ){
            if(tabsItem[i].classList.contains('_active')){
                tabsItem[i].classList.remove('_active');
@@ -69,8 +68,7 @@ window.onload = function () {
       if(tabsItem[0].classList.contains('_active')){
          prevArrow[0].classList.add('no_active');
       }
-      if((event.target.classList.contains('tabs-button-next') && !event.target.firstElementChild.classList.contains('no_active')) ||
-         (event.target.classList.contains('arrow-next') && !event.target.classList.contains('no_active'))){
+      if((event.target.classList.contains('tabs-button-next') && !event.target.firstElementChild.classList.contains('no_active')) || (event.target.classList.contains('arrow-next') && !event.target.classList.contains('no_active'))){
          for(let i = 0 ; i < tabsItem.length; i++){
             if(tabsItem[i].classList.contains('_active')){
                tabsItem[i].classList.remove('_active');

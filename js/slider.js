@@ -72,3 +72,32 @@ new Swiper('.slider-top', {
    },
   
 });
+
+const similarSwiper = new Swiper('.slider-similar-product', {
+   pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+   },
+  // стрелки
+   navigation: {
+      nextEl: '.tabs-button-next',
+      prevEl: '.tabs-button-prev'
+   },
+   breakpoints: {
+      320: {
+         slidesPerView: 2,
+         slidesPerGroup: 2,
+      },
+      992: {
+         slidesPerView: 3,
+         slidesPerGroup: 3,
+      },
+      1360: {
+         slidesPerView: 4,
+         slidesPerGroup: 1,
+      }
+   },
+
+});
+
+
