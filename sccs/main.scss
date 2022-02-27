@@ -76,13 +76,16 @@ html,body{
 .header {
    font-family: 'Montserrat', sans-serif;
    min-height: 78px;
-   position: absolute;
+   position: fixed;
    top: 0;
    left: 0;
    background-color: rgba($color:#252525, $alpha: 0.9);
    width: 100%;
    padding: 0 25px;
    z-index: 3;
+   display: flex;
+   flex-direction: column;
+   
    .logo{
       //margin-left: 24px;
       width: 120px;
@@ -92,11 +95,24 @@ html,body{
          width: 100%;
       }
    }
+   .nav-menu-mobile{
+      //display: flex;
+   }
    .nav-menu {
-
+   //    display: flex;
+   //  flex-grow: 1;
+   //  align-items: center;
+   //  justify-content: space-between;
+   display: grid;
+    grid-template-columns: 30% 40% 30%;
+    align-content: center;
+    /* height: 100%; */
+    flex-grow: 1;
       .menu {
          display: flex;
          justify-content: space-between;
+         align-items: center;
+         width: 100%;
          .menu-item {
             a{          
             font-size: 24px;
@@ -106,66 +122,68 @@ html,body{
             }
          }
       }
-   }
-   .icons{
-      display: flex;
-      visibility: hidden;
-     // margin-right: 26px;
-      justify-content: flex-end;
-      img{
-         margin-left: 40px;
-      }
-      .phone-link{        
-         font-size: 14px;
-         font-style: normal;
-         font-weight: 500;
-         line-height: 1.2;
-         letter-spacing: 0em;
-         text-align: left;
-         position: relative;
-         cursor: pointer;
-         .phone-info{
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;           
-            width: 210px;
-            height: 96px;
-            color:#ffffff;
-            background-color:#000000;
-            border-radius:2px;
-            transform: translate(55%, 0);
-            right: 50%;
-            margin-top: 50px;
-            visibility: hidden;
-            opacity: 0;            
-            &::after{
-               content:'';
-               position: absolute;
-               border: 0 solid transparent;
-               border-width: 0px 15px 10px 15px;
-               border-bottom-color: #000000;
-               bottom: 100%;
-               left: 50%;
-               transform: translate(-50%, 0);
-            }
-            a{
-               color:#ffffff;
-            }            
+      .icons{
+         display: flex;
+    
+         justify-content: flex-end;
+         align-self: center;
+         img{
+            margin-left: 40px;
          }
-         &:hover  .phone-info{
-            visibility: visible;
-            opacity: 1;
-            transition: all 1s ease;
-            margin-top: 10px;
-         } 
-          &:not(:hover)  .phone-info{          
-            transition: all 1s ease;
-         }        
+         .phone-link{        
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1.2;
+            letter-spacing: 0em;
+            text-align: left;
+            position: relative;
+            cursor: pointer;
+            .phone-info{
+               position: absolute;
+               display: flex;
+               flex-direction: column;
+               justify-content: space-evenly;
+               align-items: center;           
+               width: 210px;
+               height: 96px;
+               color:#ffffff;
+               background-color:#000000;
+               border-radius:2px;
+               transform: translate(55%, 0);
+               right: 50%;
+               margin-top: 50px;
+               visibility: hidden;
+               opacity: 0;            
+               &::after{
+                  content:'';
+                  position: absolute;
+                  border: 0 solid transparent;
+                  border-width: 0px 15px 10px 15px;
+                  border-bottom-color: #000000;
+                  bottom: 100%;
+                  left: 50%;
+                  transform: translate(-50%, 0);
+               }
+               a{
+                  color:#ffffff;
+               }            
+            }
+            &:hover  .phone-info{
+               visibility: visible;
+               opacity: 1;
+               transition: all 1s ease;
+               margin-top: 10px;
+            } 
+             &:not(:hover)  .phone-info{          
+               transition: all 1s ease;
+            }        
+         }
       }
    }
+   
    .hamburger-menu{
+      //display: none;
       position: relative;
       .btn-hamburger{
          position: absolute;
@@ -185,12 +203,13 @@ html,body{
          .span-hamburger{
             display: block;
             position: absolute;
-            //background: #BEBCBD;
+            background: #BEBCBD;
             width: 100%;
             height: 4px;
-            top:15px;
+            top:0;
             right: 0;
             border-radius: 2px;
+            transition: background .3s .3s;
             &::before,
             &::after{
                position: absolute;
@@ -201,16 +220,16 @@ html,body{
                border-radius: 2px;
                right: 0;
                content:'';
-               
-               transition-duration: .5s, 2s, 5s;
-               transition-delay:2s, .5s, 5s;
+              // transition: width 1s .5s;
+               // transition-duration: .5s, 2s, 5s;
+               // transition-delay:2s, .5s, 5s;
             }
             &::before{
-               transition: width .5s 0s, top 1s .5s, transform 1s 1.5s;
+               transition: width .5s 0s, top .5s .3s, transform .5s 0s;
                top: -10px;
             }
             &::after{
-               transition: width .5s 0s, bottom 1s .5s, transform 1s 1.5s;
+               transition: width .5s 0s, bottom .5s .3s, transform .5s 0s;
                bottom:-10px;
             }
            
@@ -224,63 +243,24 @@ html,body{
           {
                width: 80%;
             }
+         &.active .span-hamburger{
+            background:transparent;
+            transition: background .2s .2s;
+         }
          &.active   .span-hamburger::before{
             width: 100%;
             top:0;
             transform: rotate(-45deg);
+            transition:top .5s 0s, transform .5s .5s;
          }
-          &:not(.active)   .span-hamburger::before{
-            width: 80%;
-            top:-10px;
-            transition: width .5s 3s, top 2s 1s, transform 1s 1s;
-         }
+       
          &.active   .span-hamburger::after{
             width: 100%;
             bottom: 0;
             transform: rotate(45deg);
+            transition:bottom .5s 0s, transform .5s .5s;
          }
-           &:not(.active)   .span-hamburger::after{
-            width: 80%;
-            bottom: -10px;
-           transition: width .5s 3s, top 2s 1s, transform 1s 1s;
          }
-            
-         
-        
-         }
-         // .btn-hamburger-line{
-         //    .span-hamburger{
-         //       transition: background 0s .3s;
-         //    }
-         //     .span-hamburger::before, & .span-hamburger::after{
-         //       transition-duration: 1s, 1s;
-         //       transition-delay: .5s, 1.5s;
-         //    }
-         //    .span-hamburger::before{
-         //        transition-property: top, transform;
-         //        //transition-duration: .5s;
-         //     }
-         //    .span-hamburger::after{
-         //        transition-property: bottom, transform;
-         //     }
-         //    &.active .span-hamburger{
-         //       background:none;
-         //    }
-         //    &.active .span-hamburger::before{
-         //       width: 100%;
-         //       top:0;
-         //       transform: rotate(-45deg);
-         //    }
-         //    &.active .span-hamburger::after{
-         //       width: 100%;
-         //       bottom:0;
-         //       transform: rotate(45deg);
-         //    }
-         //    &.active .span-hamburger::before, &.active .span-hamburger::after{
-         //       transition-duration: 1s, 1s;
-         //       transition-delay: .5s, 1.5s;
-         //    }
-         // }
       }
    }
 
@@ -367,7 +347,7 @@ html,body{
    font-family:'Montserrat', sans-serif;
    //background: #373737;
    position: relative;
-   z-index: 3;
+   z-index: 2;
    min-height: 660px;
    display: flex;
    flex-direction: column;
@@ -1066,6 +1046,7 @@ html,body{
 
 @import '_catalog';
 @import '_page-product';
+@import '_page-order';
 @import '_media1024';
 @import '_media768';
 @import '_media320';

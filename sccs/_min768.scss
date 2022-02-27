@@ -1,6 +1,11 @@
 @media(min-width:768px){
+   /*-----------------header--------------------*/
+   header{
+      .nav-menu-mobile{
+         display: none;
+      }
+   }
    /*---------------------   page-product------------------------------*/
-  
       .section-product{
       
          .block-product-main{
