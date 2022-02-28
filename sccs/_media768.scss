@@ -439,4 +439,17 @@
             }
          } 
    }
+    /*--------page-order--------------------------------------*/
+ .section-order{
+    .order-registration{
+       display: flex;
+     flex-direction: column;
+     background: #E9E9E9;
+       .order-info{
+          .btn-order-registr{
+            width: 65%;
+          }
+       }
+    }
+ }
 }

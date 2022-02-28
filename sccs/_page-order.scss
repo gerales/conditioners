@@ -1,32 +1,39 @@
 .section-order {
    .order-registration {
-      border:1px solid black;
-      //background-color:aqua;
+   
       font-family: 'Montserrat',sans-serif;
       line-height: 1.2;
         font-style: normal;
       letter-spacing: 0em;
       text-align: left;
+      display: flex;
+     flex-direction: column;
+     background: #E9E9E9;
       .order-info{
           color:#222222;
+              display: flex;
+            flex-direction: column;
             .btn-order-registr {
             background: linear-gradient(85.74deg, #03C147 1.18%, #057A2F 99.58%);
-               box-shadow: 0px 0px 13px rgb(0 167 60 / 50%);
+               //box-shadow: 0px 0px 13px rgb(0 167 60 / 50%);
                border-radius: 10px;
                padding: 8px;
                color: #FFFFFF;
                width: calc(100% - 32px);
                min-height: 45px;
                cursor: pointer;
+               width: 100%;
+               margin: 20px auto;
             }
          .order-title{
             background: #E9E9E9;
             border-bottom: 2px solid #C9C9C9;
             padding: 10px;
+            display: none;
             h3{
                font-size: 24px;
                font-weight: 700;
-               margin-bottom: 115px;
+               margin-bottom: 15px;
             }
             .order-item{
                font-size: 16px;
@@ -41,6 +48,7 @@
             justify-content: space-between;
             align-items: center;
              background: #E9E9E9;
+             padding: 10px;
             h3{
                font-size: 18px;
                font-weight: 700;
@@ -53,10 +61,47 @@
             }
          }
       }
+      .block-abo{
+         font-size: 24px;
+         font-weight: 700;
+         text-align: center;
+         margin: 20px auto;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
     
 }
    .order-detalis {
       border:1px solid black;
       background-color:antiquewhite;
+      .block-product{
+         .block-product_bottom{
+            .block-number{
+               min-width: 98px;
+               height: 44px;
+               font-family: 'Roboto', sans-serif;
+               font-size: 24px;
+               font-style: normal;
+               font-weight: 500;
+               line-height: 28px;
+               letter-spacing: 0em;
+               text-align: center;
+               display: grid;
+               grid-template-columns: 25% 50% 25%;
+               align-items: center;
+               border:2px solid #E0E0E0;
+               border-radius:3px;
+               .number{
+                      height: 100%;
+                  border-right: 2px solid #E0E0E0;
+                  border-left: 2px solid #E0E0E0;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+               }
+            }
+         }
+      }
    }
 }

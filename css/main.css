@@ -2379,6 +2379,12 @@ h2 {
 .order-soc-seti h3 {
   text-align: center;
   margin-bottom: 20px;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: 0em;
 }
 
 .order-soc-seti .soc-icons {
@@ -2470,22 +2476,49 @@ h2 {
 }
 
 .section-order .order-registration {
-  border: 1px solid black;
   font-family: 'Montserrat',sans-serif;
   line-height: 1.2;
   font-style: normal;
   letter-spacing: 0em;
   text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #E9E9E9;
 }
 
 .section-order .order-registration .order-info {
   color: #222222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-order .order-registration .order-info .btn-order-registr {
+  background: linear-gradient(85.74deg, #03C147 1.18%, #057A2F 99.58%);
+  border-radius: 10px;
+  padding: 8px;
+  color: #FFFFFF;
+  width: calc(100% - 32px);
+  min-height: 45px;
+  cursor: pointer;
+  width: 100%;
+  margin: 20px auto;
 }
 
 .section-order .order-registration .order-info .order-title {
   background: #E9E9E9;
   border-bottom: 2px solid #C9C9C9;
   padding: 10px;
+  display: none;
 }
 
 .section-order .order-registration .order-info .order-title h3 {
@@ -2515,6 +2548,7 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   background: #E9E9E9;
+  padding: 10px;
 }
 
 .section-order .order-registration .order-info .order-price h3 {
@@ -2529,9 +2563,61 @@ h2 {
   text-align: right;
 }
 
+.section-order .order-registration .block-abo {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .section-order .order-detalis {
   border: 1px solid black;
   background-color: antiquewhite;
+}
+
+.section-order .order-detalis .block-product .block-product_bottom .block-number {
+  min-width: 98px;
+  height: 44px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 50% 25%;
+      grid-template-columns: 25% 50% 25%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #E0E0E0;
+  border-radius: 3px;
+}
+
+.section-order .order-detalis .block-product .block-product_bottom .block-number .number {
+  height: 100%;
+  border-right: 2px solid #E0E0E0;
+  border-left: 2px solid #E0E0E0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 1024px) {
@@ -3072,6 +3158,20 @@ h2 {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  /*--------page-order--------------------------------------*/
+  .section-order .order-registration {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #E9E9E9;
+  }
+  .section-order .order-registration .order-info .btn-order-registr {
+    width: 65%;
+  }
 }
 
 @media (min-width: 320px) {
@@ -3177,6 +3277,91 @@ h2 {
   .section-similar-product .block-similar .block-arrow {
     display: none;
   }
+  /*---------------------------page-order----------------------------*/
+  /*---------------------------section-order---------------------*/
+  .section-order .order-detalis {
+    border: 1px solid #E8E8E8;
+    margin: 0 12px;
+  }
+  .section-order .order-detalis .block-product {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "image block-middle" "block-product-bottom block-product-bottom";
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    width: 100%;
+  }
+  .section-order .order-detalis .block-product .close-block {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #F94547;
+  }
+  .section-order .order-detalis .block-product .close-block::after, .section-order .order-detalis .block-product .close-block::before {
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: #F94547;
+    content: '';
+  }
+  .section-order .order-detalis .block-product .close-block::before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .section-order .order-detalis .block-product .close-block::after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .section-order .order-detalis .block-product .image {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: image;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section-order .order-detalis .block-product .image img {
+    border: 1px solid #E8E8E8;
+    height: 100px;
+  }
+  .section-order .order-detalis .block-product .block-middle {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: block-middle;
+    padding-left: 15px;
+  }
+  .section-order .order-detalis .block-product .block-product_bottom {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: block-product-bottom;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .section-order .order-detalis .block-product .block-product_bottom .price {
+    width: 50%;
+    padding-left: 15px;
+  }
+  .section-order .order-detalis .block-product .block-product_bottom .price span {
+    font-size: 24px;
+  }
+  .section-order .order-detalis .block-product .block-product_bottom .block-number {
+    margin: 0 auto;
+  }
+  .section-order .order-detalis .block-product .block-product_bottom .block-number .number-minus, .section-order .order-detalis .block-product .block-product_bottom .block-number .number-plus {
+    cursor: pointer;
+  }
 }
 
 @media (min-width: 768px) {
@@ -3193,6 +3378,36 @@ h2 {
   }
   .section-product .block-product-main .order {
     margin-left: 12px;
+  }
+  .section-order .order-registration {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 45% 10% 45%;
+        grid-template-columns: 45% 10% 45%;
+    background: #E9E9E9;
+  }
+  .section-order .order-registration .order-info .order-title {
+    display: none;
+  }
+  .section-order .order-registration .order-info .btn-order-registr {
+    width: 65%;
+    margin-bottom: 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  /*---------------------------page-order----------------------------*/
+  /*---------------------------section-order---------------------*/
+  .section-order .order-detalis .block-product {
+        grid-template-areas: "image block-middle" "image block-product-bottom";
+  }
+  .section-order .order-detalis .block-product .image img {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .section-order .order-detalis .block-product .block-product_bottom .block-number {
+    margin: 0 0 0 15px;
   }
 }
 
@@ -3213,6 +3428,7 @@ h2 {
     min-height: 450px;
     min-width: 600px;
   }
+  /*--------page-order--------------------------------------*/
 }
 
 @media (min-width: 1200px) {
@@ -3232,6 +3448,76 @@ h2 {
   .section-product .block-product-main .parameters .block-parameters {
     -ms-grid-columns: 70% 30%;
         grid-template-columns: 70% 30%;
+  }
+  .section-order .order-registration {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: transparent;
+  }
+  .section-order .order-registration .order-info .order-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-order .order-registration .order-info .btn-order-registr {
+    width: 100%;
+  }
+  /*---------------------------page-order----------------------------*/
+  /*---------------------------section-order---------------------*/
+  .section-order .order-detalis .block-product {
+    -ms-grid-columns: 30% 35% 35%;
+        grid-template-columns: 30% 35% 35%;
+    width: 100%;
+    padding: 24px;
+        grid-template-areas: "image block-middle block-product-bottom";
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+  .section-order .order-detalis .block-product .image {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: image;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section-order .order-detalis .block-product .block-product_bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-right: 20px;
+  }
+  .section-order .order-detalis .block-product .block-product_bottom .price {
+    padding: 0;
+    margin: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .section-order .order-detalis .block-product .block-product_bottom .block-number {
+    margin: 0;
   }
 }
 

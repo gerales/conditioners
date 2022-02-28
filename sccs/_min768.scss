@@ -23,4 +23,48 @@
             }
          }
       }
+      .section-order{
+    .order-registration{
+       display: grid;
+     grid-template-columns: 45% 10% 45%;
+     background: #E9E9E9;
+       .order-info{
+          .order-title{
+             display: none;
+          }
+          .btn-order-registr{
+            width: 65%;
+            margin-bottom: 0;
+            flex-grow: 1;
+          }
+       }
+    }
+ }
+ /*---------------------------page-order----------------------------*/
+/*---------------------------section-order---------------------*/
+   .section-order{
+      .order-detalis {
+       
+         .block-product{
+       
+            grid-template-areas:
+               "image block-middle"
+               "image block-product-bottom";
+               
+            .image{
+            
+               img{
+                 
+                  height: fit-content;
+               }
+            }
+            .block-product_bottom{
+              
+               .block-number{
+                  margin: 0 0 0 15px; 
+               }
+            }
+         }
+      }
+   }
 }
