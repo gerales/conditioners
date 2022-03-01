@@ -1,5 +1,6 @@
+const coll = document.getElementsByClassName('filter-title');
 if(document.documentElement.clientWidth>1366){
-   let coll = document.getElementsByClassName('filter-title');
+   
    for (let i = 0; i < coll.length; i++) {
       coll[i].addEventListener('click', function () {
          this.classList.toggle('noactive');
@@ -13,5 +14,9 @@ if(document.documentElement.clientWidth>1366){
             checkItem.style.maxHeight = checkItem.scrollHeight + 'px';
          }
       });
+   }
+} else{
+   for (let i = 0; i < coll.length; i++) {
+      coll[i].nextElementSibling.style.maxHeight = 0 + 'px';
    }
 }

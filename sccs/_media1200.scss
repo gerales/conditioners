@@ -83,14 +83,16 @@
  /*---------------------------page-order----------------------------*/
 /*---------------------------section-order---------------------*/
    .section-order{
+      padding: 0 24px;
       .order-detalis {
+         margin: 0 25px 0 0;
          .block-product{
             grid-template-columns: 30% 35% 35%;
             width: 100%;
             padding: 24px;
             grid-template-areas:"image block-middle block-product-bottom";
             min-height: fit-content;
-               
+            align-items: center;   
             .image{
                grid-area: image;
                display: flex;
@@ -108,17 +110,22 @@
                justify-content: space-around;
                align-items: flex-end;
                padding-right: 20px;
+               align-self: stretch;
                .price{
                   padding: 0;
                   margin: 0;
                   width: fit-content;
+                  
                }
                .block-number{
                  margin: 0;
             }
          }
       }
+      }
+      .order-page-title{
+         margin: 24px 0 16px 0;
+      }
    }
-}
     
 }

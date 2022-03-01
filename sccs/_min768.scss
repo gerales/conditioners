@@ -44,27 +44,36 @@
 /*---------------------------section-order---------------------*/
    .section-order{
       .order-detalis {
-       
+         margin: 0 24px 35px;
          .block-product{
-       
             grid-template-areas:
                "image block-middle"
                "image block-product-bottom";
-               
             .image{
-            
                img{
-                 
                   height: fit-content;
                }
             }
             .block-product_bottom{
-              
+                 .price{
+                .sale{
+                  .old-price{
+                          font-size: 18px;
+                  }
+                  
+                  }
+            }
                .block-number{
                   margin: 0 0 0 15px; 
                }
             }
          }
+      }
+      .order-page-title{
+         margin: 16px 24px;
+         h2{
+            font-size: 24px;
+            }
       }
    }
 }

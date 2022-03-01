@@ -218,13 +218,10 @@
          margin-bottom: 20px;
       }
    .block-saidbar {
-
       padding-left: 14px;
-      
       .block-filters {
          #brend{
             .check-item{
-               
                overflow-y: scroll;
                scroll-snap-type: y;
             }
@@ -242,7 +239,6 @@
             padding: 8px 0px;
             max-width: 200px;
             min-width: 200px;
-            
             .btn-blue{
                //width: calc(100% + 16px);
                width: 100%;
@@ -612,5 +608,3 @@
           }
    }
 }
-
-@import '_media1366';

@@ -1,4 +1,5 @@
-window.onload = function () {//скролл для секции брендов
+window.onload = function () {
+   //скролл для секции брендов
    let heightBrand = document.getElementById('brend-check');
    let height = heightBrand.children[0].clientHeight;
    heightBrand.style.maxHeight = (height * 3) + 'px';
@@ -35,6 +36,36 @@ window.onload = function () {//скролл для секции брендов
          let select = event.target.closest('.select');
          select.classList.remove('active');
          event.target.classList.add('hide');
+      }
+   }
+
+   //спойлер фильтра
+   const coll = document.getElementsByClassName('filter-title');
+   if (document.documentElement.clientWidth > 1366) {
+
+      for (let i = 0; i < coll.length; i++) {
+         coll[i].addEventListener('click', function () {
+            this.classList.toggle('noactive');
+            let checkItem = this.nextElementSibling;
+            console.log(checkItem);
+            checkItem.style.maxHeight = checkItem.scrollHeight + 'px';
+            if (this.classList.contains('noactive')) {
+               //checkItem.style.transition = 'height .5s ease'; 
+               checkItem.style.maxHeight = 0 + 'px';
+            }
+            else {
+               checkItem.style.maxHeight = checkItem.scrollHeight + 'px';
+            }
+         });
+      }
+   } else {
+      for (let i = 0; i < coll.length; i++) {
+         coll[i].nextElementSibling.style.maxHeight = 0 + 'px';
+         // coll[i].addEventListener('click', function () {
+         //    //this.classList.toggle('noactive');
+         //    let checkItem = this.nextElementSibling;
+         //    console.log(checkItem);
+         // });
       }
    }
 };

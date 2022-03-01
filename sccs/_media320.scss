@@ -97,7 +97,7 @@
    .section-order{
       .order-detalis {
          border: 1px solid #E8E8E8;
-         margin: 0 12px;
+         margin: 0 16px 15px;
          .block-product{
             display: grid;
             grid-template-columns: 50% 50%;
@@ -108,16 +108,13 @@
                width: 100%;
             .close-block{
                position: absolute;
-               top: 10px;
-               right: 15px;
+               top: 15px;
+               right: 25px;
              
                color:#F94547;
                &::after,&::before{
                   position: absolute;
-                  // top: 0;
-                  // right: 0;
-                //  color:#F94547;
-                  width: 10px;
+                  width: 20px;
                   height: 2px;
                   background-color:#F94547;
                   content:'';
@@ -152,6 +149,9 @@
                   span{
                      font-size: 24px;
                   }
+                  .old-price{
+                     font-size: 16px;
+                  }
                }
                .block-number{
                   margin: 0 auto; 
@@ -162,6 +162,11 @@
             }
          }
       }
+       .order-page-title{
+          margin: 5px 16px;
+         h2{
+            font-size: 14px;
+            }
+      }
    }
-    
 }

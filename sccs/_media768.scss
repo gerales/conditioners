@@ -35,6 +35,13 @@
             }
              &.active {
               right: 0;
+              .icons {
+               .cart-icon{
+                  .count{
+                     right: calc(50% - 9px);
+                  }
+               }
+              } 
             }
             .menu{
                    flex-direction: column;
