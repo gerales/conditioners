@@ -1,0 +1,36 @@
+.section-temp {
+   position: relative;
+   min-height: 100vh;
+   .block-main {
+      display: flex;
+      justify-content: center;
+      align-items:center;
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      border:1px solid black;
+      background-color:bisque;
+      top:0;
+      left:-100%;
+      transition: all 1s ease;
+      &.active{
+         left:0;
+      }
+      .block-item{
+         position: absolute;
+         width: 100%;
+          height: 100vh;
+      border:1px solid black;
+      background-color:aqua;
+      top:0;
+      left:-100%;
+      transition: all 1s ease;
+      &.active{
+         left:0;
+      }
+
+      }
+   }
+}
+.btn-blue {
+}

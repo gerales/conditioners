@@ -21,7 +21,7 @@ if (slider) {
    });
 
    const setSlider = (i, value) => {
-      let arr = [null, null]
+      let arr = [null, null];
       arr[i] = value;
 
       slider.noUiSlider.set(arr);

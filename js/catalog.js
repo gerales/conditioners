@@ -1,7 +1,7 @@
 window.onload = function () {
    //скролл для секции брендов
    let heightBrand = document.getElementById('brend-check');
-   let height = heightBrand.children[0].clientHeight;
+   let height = heightBrand.children[1].clientHeight;
    heightBrand.style.maxHeight = (height * 3) + 'px';
 
    let select = function () {//кастомный селект
@@ -59,8 +59,11 @@ window.onload = function () {
          });
       }
    } else {
+      // let heightBtn = document.querySelector('.btn-blue').parentElement.parentElement.className;
+      // console.log(heightBtn);
       for (let i = 0; i < coll.length; i++) {
-         coll[i].nextElementSibling.style.maxHeight = 0 + 'px';
+         coll[i].nextElementSibling.style.maxHeight = 'none';
+         coll[i].nextElementSibling.style.height = coll[i].parentElement.parentElement.style.height;
          // coll[i].addEventListener('click', function () {
          //    //this.classList.toggle('noactive');
          //    let checkItem = this.nextElementSibling;
