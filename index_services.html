@@ -783,10 +783,10 @@
    <!-- <script src="/js/tabs.js"></script> -->
    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
    <script src="/js/slider.js"></script>
-   <script src="/js/nouislider.min.js"></script>
-   <script src="/js/spoiler_filters.js"></script>
-   <script src="/js/price_slider.js"></script>
-   <script src="/js/catalog.js"></script>
+   <!-- <script src="/js/nouislider.min.js"></script> -->
+   <!-- <script src="/js/spoiler_filters.js"></script> -->
+   <!-- <script src="/js/price_slider.js"></script> -->
+   <!-- <script src="/js/catalog.js"></script> -->
    <script src="/js/adaptiv-menu.js"></script>
    <script>
       let btnFilters = document.getElementById('btn-filters');
@@ -794,6 +794,13 @@
       btnFilters.addEventListener('click', function () {
          blockSaidbar.classList.add('active');
       });
+        document.querySelector('.radio-item').addEventListener('click', function (e) {
+            if (e.target.classList.contains('radio')) {
+               if (e.target.value == "on" && !e.target.defaultChecked && e.target.parentElement.querySelector('.text').innerText == 'Каталог') {
+                  location.href = "index_catalog.html";
+               }
+            };
+         })
    </script>
 </body>
 

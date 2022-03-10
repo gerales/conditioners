@@ -32,4 +32,14 @@ if (slider) {
          setSlider(index, e.currentTarget.value);
       });
    });
+
+   document.querySelector('.price-clear').addEventListener('click', function(e){
+      slider.noUiSlider.set([20, 99000]);
+   });
+   document.querySelector('.clear-global').addEventListener('click', function (e) {
+      slider.noUiSlider.set([20, 99000]);
+   });
+   document.querySelector('#ul-global').addEventListener('click', function (e) {
+      slider.noUiSlider.set([20, 99000]);
+   });
 }

@@ -117,7 +117,7 @@
                            <h2 class="subtitle-filter">Фільтри</h2>
                            <div class="ul-filters">
                             <ul class="">
-                               <li class="clear" >Очистити<span id="clear"></span></li>
+                               <li class="clear" >Очистити<span class="clear-span"></span></li>
                             </ul>
                             
                          </div>
@@ -134,7 +134,7 @@
                            <h2>Фільтри</h2>
                            <div class="ul-filters">
                               <ul class="">
-                                 <li class="clear">Очистити</li>
+                                 <li class="clear clear-global">Очистити фільтри</li>
                         
                               </ul>
                         
@@ -159,7 +159,7 @@
                         <div class="filters-item  type">
                            <div class="check-item">
                               <label class="label">
-                                 <input type="checkbox" class="checkbox" checked>
+                                 <input type="checkbox" class="checkbox">
                                  <span class="fake"></span>
                                  <span class="text">Настінні кондеціонери</span>
                               </label>
@@ -188,31 +188,32 @@
                         </div>
                         <div class="filters-item" id="brend">
                   
-                           <button class="btn-blue">
+                           <button class="btn-blue" id="btn-brend">
                               Пошук
                            </button>
-                           <form action="#" name="search" class="form-search">
-                              <label>
-                  
-                                 <input type="search" name="search" placeholder="Пошук">
-                                 <img src="/ico/search_icon2.svg" alt="">
-                              </label>
-                  
-                           </form>
+                        
                            <div class="filter-title">
-                              <p>Брэнд</p><span class="filters">Усе</span>
+                              <p class="title">Брэнд</p><span class="filters">Усе</span>
                            </div>
                            <div class="check-item" id="brend-check">
                               <div class="title-filters">
                                  <h2 class="subtitle-filter">Фільтри</h2>
                                  <div class="ul-filters">
                                     <ul class="">
-                                       <li class="clear">Очистити<span id="clear"></span></li>
+                                       <li class="clear push">Очистити<span class="clear-span"></span></li>
                                     </ul>
                               
                                  </div>
                               </div>
                               <!-- title-filters -->
+                                 <form action="#" name="search" class="form-search">
+                                    <label>
+                                 
+                                       <input type="search" name="search" placeholder="Пошук">
+                                       <img src="/ico/search_icon2.svg" alt="">
+                                    </label>
+                                 
+                                 </form>
                               <label class="label">
                                  <input type="checkbox" class="checkbox">
                                  <span class="fake"></span>
@@ -238,6 +239,9 @@
                                  <span class="fake"></span>
                                  <span class="text">Hyundai</span>
                               </label>
+                              <button class="btn-blue btn-search">
+                                 Пошук
+                              </button>
                            </div>
                         </div>
                         <div class="filters-item" id="cena">
@@ -249,7 +253,7 @@
                                     <h2 class="subtitle-filter">Фільтри</h2>
                                     <div class="ul-filters">
                                        <ul class="">
-                                          <li class="clear">Очистити<span id="clear"></span></li>
+                                          <li class="clear price-clear">Очистити<span class="clear-span"></span></li>
                                        </ul>
                                  
                                     </div>
@@ -268,20 +272,22 @@
                               </div>
                               <div class="slider-ui" id="slider-ui">
                               </div>
+                              <button class="btn-blue btn-search">
+                                 Пошук
+                              </button>
                            </div>
                   
                         </div>
                         <div class="filters-item" id="tip-compres">
                            <div class="filter-title">
-                              <p>Тип компресора</p><span class="filters">Усе</span>
-                              
+                              <p class="title">Тип компресора</p><span class="filters">Усе</span>
                            </div>
                            <div class="check-item">
                                  <div class="title-filters">
                                     <h2 class="subtitle-filter">Фільтри</h2>
                                     <div class="ul-filters">
                                        <ul class="">
-                                          <li class="clear">Очистити<span id="clear"></span></li>
+                                          <li class="clear push">Очистити<span class="clear-span"></span></li>
                                        </ul>
                                  
                                     </div>
@@ -298,22 +304,26 @@
                                  <span class="text">Inverter</span>
                               </label>
                               <label class="label">
-                                 <input type="checkbox" class="checkbox" checked>
+                                 <input type="checkbox" class="checkbox">
                                  <span class="fake"></span>
                                  <span class="text">Full inverter</span>
                               </label>
+                              <button class="btn-blue btn-search">
+                                 Пошук
+                              </button>
                            </div>
+                          
                         </div>
                         <div class="filters-item" id="plochad">
                            <div class="filter-title">
-                              <p>Площа приміщення, м²</p><span class="filters">Усе</span>
+                              <p class="title">Площа приміщення, м²</p><span class="filters">Усе</span>
                            </div>
                            <div class="check-item">
                                  <div class="title-filters">
                                     <h2 class="subtitle-filter">Фільтри</h2>
                                     <div class="ul-filters">
                                        <ul class="">
-                                          <li class="clear">Очистити<span id="clear"></span></li>
+                                          <li class="clear push">Очистити<span class="clear-span"></span></li>
                                        </ul>
                                  
                                     </div>
@@ -354,18 +364,21 @@
                                  <span class="fake"></span>
                                  <span class="text">Понад 100 м²</span>
                               </label>
+                              <button class="btn-blue btn-search">
+                                 Пошук
+                              </button>
                            </div>
                         </div>
                         <div class="filters-item" id="functions">
                            <div class="filter-title">
-                              <p>Набір функцій</p><span class="filters">Усе</span>
+                              <p class="title">Набір функцій</p><span class="filters">Усе</span>
                            </div>
                            <div class="check-item">
                                  <div class="title-filters">
                                     <h2 class="subtitle-filter">Фільтри</h2>
                                     <div class="ul-filters">
                                        <ul class="">
-                                          <li class="clear">Очистити<span id="clear"></span></li>
+                                          <li class="clear push">Очистити<span class="clear-span"></span></li>
                                        </ul>
                                  
                                     </div>
@@ -426,18 +439,21 @@
                                  <span class="fake"></span>
                                  <span class="text">Зволоження</span>
                               </label>
+                              <button class="btn-blue btn-search">
+                                 Пошук
+                              </button>
                            </div>
                         </div>
                         <div class="filters-item" id="temp">
                            <div class="filter-title">
-                              <p>Робота при минусових температурах, °C</p><span class="filters">Усе</span>
+                              <p class="title">Робота при минусових температурах, °C</p><span class="filters">Усе</span>
                            </div>
                            <div class="check-item">
                                  <div class="title-filters">
                                     <h2 class="subtitle-filter">Фільтри</h2>
                                     <div class="ul-filters">
                                        <ul class="">
-                                          <li class="clear">Очистити<span id="clear"></span></li>
+                                          <li class="clear push">Очистити<span class="clear-span"></span></li>
                                        </ul>
                                  
                                     </div>
@@ -468,18 +484,21 @@
                                  <span class="fake"></span>
                                  <span class="text">до -32 °C</span>
                               </label>
+                              <button class="btn-blue btn-search">
+                                 Пошук
+                              </button>
                            </div>
                         </div>
                         <div class="filters-item" id="noise">
                            <div class="filter-title">
-                              <p>Кількість шуму, що видається, Дб</p><span class="filters">Усе</span>
+                              <p class="title">Кількість шуму, що видається, Дб</p><span class="filters">Усе</span>
                            </div>
                            <div class="check-item">
                                  <div class="title-filters">
                                     <h2 class="subtitle-filter">Фільтри</h2>
                                     <div class="ul-filters">
                                        <ul class="">
-                                          <li class="clear">Очистити<span id="clear"></span></li>
+                                          <li class="clear push">Очистити<span class="clear-span"></span></li>
                                        </ul>
                                  
                                     </div>
@@ -495,11 +514,14 @@
                                  <span class="fake"></span>
                                  <span class="text">Звичайний (від 24 Дб)</span>
                               </label>
+                              <button class="btn-blue btn-search">
+                                 Пошук
+                              </button>
                            </div>
                         </div>
                         <div class="filters-item" id="cuntry">
                            <div class="filter-title">
-                              <p>Країна виробник</p><span class="filters">Усе</span>
+                              <p class="title">Країна виробник</p><span class="filters">Усе</span>
                            </div>
                           
                            <div class="check-item">
@@ -507,7 +529,7 @@
                                     <h2 class="subtitle-filter">Фільтри</h2>
                                     <div class="ul-filters">
                                        <ul class="">
-                                          <li class="clear">Очистити<span id="clear"></span></li>
+                                          <li class="clear push">Очистити<span class="clear-span"></span></li>
                                        </ul>
                                  
                                     </div>
@@ -563,6 +585,9 @@
                                  <span class="fake"></span>
                                  <span class="text">Японія</span>
                               </label>
+                              <button class="btn-blue btn-search">
+                                 Пошук
+                              </button>
                            </div>
                   
                         </div>
@@ -575,9 +600,9 @@
                      <div class="row no-gutters align-items-center justify-content-between row-top">
                         <button class="btn-filters" id="btn-filters">Фільтри</button>
                         <div class="ul-filters">
-                           <ul class="">
+                           <ul class="" id="ul-global">
                               <li class="clear">Очистити</li>
-                              <li>Настінні кондеціонери<span>&times;</span></li>
+                              <!-- <li>Настінні кондеціонери<span class="li-close">&times;</span></li> -->
                            </ul>
                         </div>
                         <form action="#">
@@ -1303,108 +1328,14 @@
    <script src="/js/catalog.js"></script>
    <script src="/js/adaptiv-menu.js"></script>
    <script>
-      if(document.documentElement.clientWidth<1366){
-         const btnFilters = document.getElementById('btn-filters');
-         const blockSaidbar = document.getElementById('block-saidbar');
-         const closeFilters = document.getElementById('close-filters');
-         const filters = document.getElementsByClassName('filter-title');
-         let count = 0;
-         //открытие бокового меню с фильтрами
-         btnFilters.addEventListener('click', function(){
-            blockSaidbar.classList.add('active');
-            document.querySelector('.overlay').classList.add('active');
-            document.querySelector('.block-background').style.display = 'block';
-         });
-
-         //закрытие меню
-         closeFilters.addEventListener('click', function(){
-            blockSaidbar.classList.remove('active');
-            document.querySelector('.overlay').classList.remove('active');
-            document.querySelector('.block-background').style.display = 'none';
-         });
-
-         //открытие подменю фильтра
-         document.querySelector('.block-filters').addEventListener('click', function(e){
-            //console.log(e);
-            const subFilter = document.getElementById('subfilter');
-            const subFilterHtml = subFilter.innerHTML;
-            let divAppend = document.createElement('div');
-            divAppend.className='check-item';
-               if (e.target.classList.contains('filter-title')){
-                  // subFilter.classList.add('active');
-                  // subFilter.children[0].children[0].innerText = e.target.children[0].innerText;
-                  // subFilter.lastChild.after(divAppend);//добавление узла для вставки опций фильтра
-                  // subFilter.lastChild.innerHTML = e.target.nextElementSibling.innerHTML;
-                  //console.log(e);
-                 e.target.nextElementSibling.classList.add('active');
-                 e.target.nextElementSibling.children[0].children[0].innerText = e.target.children[0].innerText;
-                 e.target.nextElementSibling.style.height = e.target.parentElement.parentElement.style.height;
-                 console.log(e.target.nextElementSibling.style.height );
-               }
-               // else if(e.target.parentElement.classList.contains('filter-title')){
-               //    subFilter.classList.add('active');
-               //    subFilter.children[0].children[0].innerText = e.target.parentElement.children[0].innerText;
-               //    subFilter.lastChild.after(divAppend);
-               //    subFilter.lastChild.innerHTML = e.target.parentElement.nextElementSibling.innerHTML;
-               // }
-               if(e.target.classList.contains('subtitle-filter')){
-                  console.log(e);
-                  e.target.parentElement.parentElement.classList.remove('active');
-               }
-         });
-
-         //закрытие подменю
-         document.querySelector('.subtitle-filter').addEventListener('click',function(e){
-             console.log(e);
-            // const clear = document.getElementById('clear');
-            // if (e.target.classList.contains('subtitle-filter')){
-            //    console.log(this.lastChild);
-            //    const filtersItems = document.getElementsByClassName('filters-item');
-            //    for(let i=0; i<filtersItems.length; i++){
-            //       // console.log(filtersItems[i].firstElementChild);
-            //       let childNodes = filtersItems[i].childNodes;
-            //       for(let a=0; a<childNodes.length; a++){
-            //          if(childNodes[a].className=='filter-title'){
-            //              //console.log(childNodes[a].firstElementChild);
-                         
-            //             if(e.target.innerText == childNodes[a].firstElementChild.innerText){
-            //                //console.log(childNodes[a].firstElementChild.innerText);
-            //                //console.log(childNodes[a].nextElementSibling.innerHTML);
-            //                //console.log(childNodes[a].nextElementSibling.innerHTML);
-            //                childNodes[a].nextElementSibling.innerHTML =this.lastChild.innerHTML;
-            //             }
-            //          }
-                   
-            //       }
-            //       //console.log(this.lastChild.innerHTML);
-            //    }
-               
-            //    this.classList.remove('active');
-            //    //this.lastChild.remove();
-            // }
-            if(e.target.classList.contains('label')){
-               console.log(e);
-               //let count=0;
-               if(!e.target.children[0].checked){
-                  
-                  count= count+1;
-                  clear.innerText = count;
-               } else {
-                  count=count-1;
-                  if(count==0){
-                     clear.innerText = '';
-                  }
-                  else {clear.innerText = count;}
-               }
-               console.log(count);
-            }
-         });
-
-         //подсчет чекбоксов
-         // document.querySelector('.label').addEventListener('click', function(e){
-         //    console.log('worj');
-         // });
-      }
+    document.querySelector('.radio-item').addEventListener('click', function(e){
+       if(e.target.classList.contains('radio')){
+          if(e.target.value=="on" && !e.target.defaultChecked && e.target.parentElement.querySelector('.text').innerText == 'Послуги'){
+           location.href ="index_services.html";
+          }
+       };
+    })
+    
    </script>
 </body>
 

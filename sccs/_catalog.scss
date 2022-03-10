@@ -539,51 +539,7 @@
                      
                   }  
                }
-            // .check-item{
-            //    transition: all .5s ease;
-            //    max-height:fit-content;
-            //    overflow: hidden;
-                             
-            //     .fake{
-            //          width: 23px;
-            //          height: 23px;
-            //          border:2px solid #808080;
-            //          border-radius: 5px;
-            //          display: inline-block;
-            //          position: relative;
-            //          &::before{
-            //             content:'';
-            //             position:absolute;
-            //             display: block;
-            //             background-color:#001F8D;
-            //             width: 100%;
-            //             height: 100%;
-            //             border-radius: 5px;
-            //             opacity: 0;
-            //             transition: .2s;
-            //          }
-            //          &::after{
-            //             content:url('/ico/check.svg');
-            //             position: absolute;
-            //             top:50%;
-            //             left: 50%;
-            //             transform: translate(-50%, -40%);
-            //             opacity: 0;
-            //             transition: .2s;
-            //          }
-            //       }
-            //       .checkbox:checked + .fake::before,
-            //       .checkbox:checked + .fake,
-            //       .checkbox:checked + .fake::after{
-            //          opacity: 1;
-            //          border:none;
-
-            //       }
-            //       .text{                    
-            //          font-weight: 500;                    
-            //          color: #474747;
-            //       }
-            // }
+         
             .radio-item{
               .radio{
                      display: none;
@@ -769,7 +725,10 @@
                   display: flex;
                   justify-content: center;
                   align-items: center;
+                  padding: 0;
+                  border:none;
                   span{
+                     position: relative;
                      font-family: 'Roboto',sans-serif;
                      font-size: 16px;
                      font-style: normal;
@@ -779,6 +738,8 @@
                      text-align: center;
                      color:#000000;
                      opacity: .5;
+                     top:auto;
+                     right: auto;
                   }
                   &.active{
                      border: 1px solid #474747;
